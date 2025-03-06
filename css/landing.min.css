@@ -7137,10 +7137,10 @@ blockquote {
 }
 
 #investor .feature-img {
-    object-fit: inherit;
+    object-fit: cover;
     flex: none;
     width: 100%;
-    height: 60%;
+    height: 35rem;
     border-top-right-radius: 3rem;
     /* border-bottom: 1rem; */
 }
@@ -7148,7 +7148,7 @@ blockquote {
 #model .feature-img {
     object-fit: cover;
     flex: none;
-    width: 25rem;
+    width: 22rem;
     height: 16rem;
     border-radius: 2rem;
 }
