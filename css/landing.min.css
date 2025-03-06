@@ -2313,7 +2313,8 @@ ul {
 
 img {
     max-width: 100%;
-    display: inline-block
+    display: inline-block;
+    border-radius: 2rem;
 }
 
 strong {
@@ -6348,7 +6349,7 @@ blockquote {
     align-items: center;
     margin-right: auto;
     font-family: Exo, sans-serif;
-    display: flex
+    display: flex;
 }
 
 .navbar-logo-left {
@@ -11406,7 +11407,8 @@ blockquote {
         grid-column-gap: 32px;
         grid-row-gap: 32px;
         flex-flow: column;
-        padding: 32px 24px
+        padding: 32px 24px;
+        background-color: #000;
     }
 
     .navbar-logo-left-container.shadow-three {
@@ -12016,6 +12018,10 @@ blockquote {
     .green-back-holder-tokenize {
         max-width: 100%;
         height: auto
+    }
+
+    .line-1, .line-2, .line-3{
+        background-color: #fff;
     }
 }
 
@@ -15396,7 +15402,8 @@ blockquote {
     .nav-links {
         grid-column-gap: 24px;
         grid-row-gap: 24px;
-        align-items: stretch
+        align-items: stretch;
+        background-color: #000;
     }
 
     .navbar-logo-left {
@@ -16131,7 +16138,7 @@ blockquote {
 
 .roadmap .timeline ol {
     font-size: 0;
-    padding: 250px 0;
+    padding: 18rem 0;
     transition: all 1s;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
