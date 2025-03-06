@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Loader with Transition</title>
+    <style>
+        /* Full-screen loader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000; /* Background color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1; 
+            transition: opacity 0.8s ease-in-out; /* Smooth fade-out transition */
+        }
+
+        /* Hide preloader */
+        #preloader.hidden {
+            opacity: 0;
+            pointer-events: none; /* Prevent interactions after fade-out */
+        }
+
+        /* Page content (hidden initially) */
+        #content {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="preloader">
+        <canvas id="spinner" width="150" height="150"></canvas>
+    </div>
+
+    <!-- Page Content -->
+    <div id="content">
+        <h1>Welcome to My Page</h1>
+        <p>Page has loaded successfully!</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const canvas = document.getElementById("spinner");
+            const ctx = canvas.getContext("2d");
+            let percentage = 0;
+
+            function drawLoader(progress) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Draw background circle
+                ctx.beginPath();
+                ctx.arc(75, 75, 60, 0, 2 * Math.PI);
+                ctx.strokeStyle = "#333";
+                ctx.lineWidth = 20;
+                ctx.stroke();
+
+                // Draw progress arc
+                ctx.beginPath();
+                ctx.arc(75, 75, 60, -0.5 * Math.PI, (-0.5 + (progress / 100) * 2) * Math.PI);
+                ctx.strokeStyle = "#d95cfe";
+                ctx.lineWidth = 20;
+                ctx.stroke();
+
+                // Draw percentage text
+                ctx.font = "20px Arial bold";
+                ctx.fillStyle = "#fff";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.fillText(progress + "%", 75, 75);
+            }
+
+            function updateLoader() {
+                if (percentage < 100) {
+                    percentage += 1;
+                    drawLoader(percentage);
+                    setTimeout(updateLoader, 50); // Adjust speed
+                } else {
+                    // Add fade-out effect
+                    document.getElementById("preloader").classList.add("hidden");
+                    setTimeout(() => {
+                        document.getElementById("preloader").style.display = "none";
+                        document.getElementById("content").style.display = "block";
+                    }, 800); // Match transition duration
+                }
+            }
+
+            updateLoader();
+        });
+    </script>
+
+</body>
+</html>
