@@ -8,6 +8,11 @@ body {
     margin: 0
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
 article,
 aside,
 details,
@@ -863,9 +868,13 @@ textarea.w-select {
 
 @media screen and (max-width:991px) {
 
-    #roadmap{
+    #roadmap .timeline{
         display: none;
     }
+    #roadmap .responsive-timeline{
+        display: block;
+    }
+
     .w-container {
         max-width: 728px
     }
@@ -6554,7 +6563,9 @@ blockquote {
     /* border: 1px solid blue; */
     padding: 1rem 1rem;
     margin-top: 2rem;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    */
+   box-shadow: 0 6px 16px #a0a7c31a;
     border-radius: 2rem;
 }
 
@@ -7519,6 +7530,14 @@ blockquote {
     max-width: 780px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+}
+
+.solution-img{
+     width: 100%;
+    max-width: 780px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    
 }
 
 .swiper-pagination {
@@ -16088,6 +16107,10 @@ blockquote {
     grid-gap: 20px;
 }
 
+.roadmap .responsive-timeline{
+    display: none;
+}
+
 .roadmap .timeline::before,
 .roadmap .timeline::after {
     content: "";
@@ -16264,8 +16287,11 @@ blockquote {
     #investor .features-grid {
         grid-template-columns: 1fr;
     }
-    #roadmap{
+    #roadmap .timeline{
         display: none;
+    }
+    #roadmap .responsive-timeline{
+        display: block;
     }
   }
   
@@ -16279,8 +16305,11 @@ blockquote {
         grid-template-columns: 1fr 1fr;
     }
   
-    #roadmap{
+    #roadmap .timeline{
         display: none;
+    }
+    #roadmap .responsive-timeline{
+        display: block;
     }
   }
 
