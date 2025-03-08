@@ -868,6 +868,12 @@ textarea.w-select {
 
 @media screen and (max-width:991px) {
 
+    #nav-img{
+        display: none;
+    }
+    .navbar{
+        border-radius: 0 !important;
+    }
     #roadmap .timeline{
         display: none;
     }
@@ -6283,7 +6289,7 @@ blockquote {
     justify-content: flex-start;
     align-items: center;
     padding: 0rem 0rem;
-    padding-top: 12rem;
+    /* padding-top: 12rem; */
     margin: 7rem 0rem;
     display: flex
 }
@@ -6471,7 +6477,8 @@ blockquote {
     font-weight: 700;
     line-height: 120%;
     transition: all .3s;
-    display: flex
+    display: flex;
+    text-decoration: none;
 }
 
 .primary-btn:hover {
@@ -6955,9 +6962,15 @@ blockquote {
 }
 
 .partner-logo-img {
-    opacity: .5;
+    opacity: 0.5;
     filter: grayscale();
-    width: 100%
+    width: 100%;
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+.partner-logo-img:hover{
+    filter: none;
+    opacity: 1;
 }
 
 .partner-logo-img.svg,
@@ -16488,3 +16501,20 @@ blockquote {
     text-align: center;
     margin-top: 50px;
 }
+
+/* new nav */
+
+#bootstrap .navbar-brand {
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+  }
+  
+ #bootstrap .navbar-nav .nav-item:hover {
+    background-color: rgba(180, 190, 203, 0.4);
+  }
+
+#bootstrap.navbar{z-index: 999;/* padding-top: 32px; *//* padding-left: 20px; *//* padding-right: 20px; */position: sticky;top: 2px;margin-top: 2rem;inset: 0% 0% auto;max-width: 1360px;left: 18rem;}
