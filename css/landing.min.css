@@ -862,6 +862,10 @@ textarea.w-select {
 }
 
 @media screen and (max-width:991px) {
+
+    #roadmap{
+        display: none;
+    }
     .w-container {
         max-width: 728px
     }
@@ -2216,7 +2220,7 @@ textarea.w-select {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
-    display: grid
+    
 }
 
 .w-layout-blockcontainer {
@@ -2747,6 +2751,25 @@ blockquote {
     padding-right: 17px;
     display: flex;
     box-shadow: 6px 0 16px #a0a7c314
+}
+
+.image-content{
+    position: relative;
+
+}
+
+.image-content::after{
+    content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.image-content img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 .common_btn {
@@ -6903,9 +6926,10 @@ blockquote {
 }
 
 .partners-grid {
+    display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 40px
+    margin-top: 40px;
 }
 
 .partner-logo-holder {
@@ -7089,6 +7113,7 @@ blockquote {
 }
 
 .features-grid {
+    display: grid;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     grid-template-rows: auto;
@@ -7149,12 +7174,11 @@ blockquote {
 }
 
 #investor .feature-img {
-    object-fit: inherit;
-    flex: none;
-    width: 100%;
-    height: 60%;
+    width: 100%; 
+    max-width: 400px; 
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
     border-top-right-radius: 3rem;
-    /* border-bottom: 1rem; */
 }
 
 #model .feature-img {
@@ -7491,10 +7515,10 @@ blockquote {
 }
 
 .investment-img {
+    width: 100%;
+    max-width: 780px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 1rem;
-    width: 54rem;
-    height: 46rem;
 }
 
 .swiper-pagination {
@@ -12025,7 +12049,7 @@ blockquote {
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .section {
         padding: 0 0
     }
@@ -13319,7 +13343,7 @@ blockquote {
         /* margin-top: 32px; */
     }
 
-    #investor .features-grid {
+#investor .features-grid {
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     grid-template-rows: auto;
@@ -16230,6 +16254,36 @@ blockquote {
 }
 
 
+/* Portrait & Landscape Specific Adjustments */
+@media only screen and (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+    /* Styles for all iPads in portrait mode */
+    #model .features-grid {
+        grid-template-columns: 1fr;
+        /* display: none; */
+    }
+    #investor .features-grid {
+        grid-template-columns: 1fr;
+    }
+    #roadmap{
+        display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
+    /* Styles for all iPads in landscape mode */
+    #model .features-grid {
+        grid-template-columns: 1fr;
+        /* display: none; */
+    }
+    .partners-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+  
+    #roadmap{
+        display: none;
+    }
+  }
+
 @media (max-width: 768px) {
     .roadmap {
         all: unset; /* Reset all styles */
@@ -16350,14 +16404,7 @@ blockquote {
     }
 }
 
-/* Portrait & Landscape Specific Adjustments */
-@media only screen and (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
-    /* Styles for all iPads in portrait mode */
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
-    /* Styles for all iPads in landscape mode */
-  }
+
 
 
 

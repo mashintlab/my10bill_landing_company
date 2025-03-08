@@ -1691,11 +1691,11 @@ callbacks: {
 
                 legend: {
                         display: true,
-                        position: 'right',
+                        position: window.innerWidth <= 768 ? 'bottom' : 'right',
                         labels: {
                           fontColor: '#fff', // Changed to black for better visibility
                             // font: {
-                            //     size: window.innerWidth <= 768 ? 16 : 20
+                                 size: window.innerWidth <= 768 ? 16 : 20,
                             // },
                             fontSize: 15,
                             boxWidth: 20,
@@ -1705,6 +1705,11 @@ callbacks: {
                 devicePixelRatio: 1.5 // Fixed value for better compatibility
             };
         
+            function updateChartLegend(chart) {
+    chart.options.legend.position = window.innerWidth <= 768 ? 'bottom' : 'right';
+    chart.update();
+    }
+
             // Initialize chart
             const myChart = new Chart(ctx, {
                 type: 'doughnut',
@@ -1715,6 +1720,7 @@ callbacks: {
             // Handle window resize
             window.addEventListener('resize', function() {
                 myChart.resize();
+                updateChartLegend(myChart);
             });
         });
         </script>
