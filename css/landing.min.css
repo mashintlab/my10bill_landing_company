@@ -2295,7 +2295,8 @@ h3 {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: 700;
-    line-height: 30px
+    line-height: 30px;
+    margin-left: 2rem;
 }
 
 h4 {
@@ -6453,7 +6454,8 @@ blockquote {
 }
 
 .btn-holder.h-flex.mg-top-40px {
-    margin-top: 40px
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .primary-btn {
