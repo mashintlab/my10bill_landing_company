@@ -6563,11 +6563,11 @@ blockquote {
     display: flex;
     position: relative;
     /* border: 1px solid blue; */
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
     margin-top: 2rem;
     /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     */
-   box-shadow: 0 6px 16px #a0a7c31a;
+    box-shadow: 0 6px 16px #a0a7c31a;
     border-radius: 2rem;
 }
 
@@ -16107,10 +16107,16 @@ blockquote {
     display: grid;
     grid-template-columns: 320px auto;
     grid-gap: 20px;
+    box-shadow: 0 6px 16px #a0a7c31a;
+    padding: 2rem;
+    border-radius: 2rem;
 }
 
 .roadmap .responsive-timeline{
     display: none;
+    box-shadow: 0 6px 16px #a0a7c31a;
+    border-radius: 2rem;
+    padding: 2rem;
 }
 
 .roadmap .timeline::before,
