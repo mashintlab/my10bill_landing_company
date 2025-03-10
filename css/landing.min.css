@@ -3391,12 +3391,18 @@ blockquote {
     border-radius: 50%;
     flex: none;
     width: 230px;
-    height: 230px
+    height: 230px;
+    transition: border-radius 0.5s ease, scale 0.5s ease;
+}
+
+.team-member-img:hover{
+    border-radius: 0%;
+    scale: 1.2;
 }
 
 .member-socials {
     grid-column-gap: 16px;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 60px;
     flex-direction: row;
     flex: none;
@@ -7874,7 +7880,9 @@ blockquote {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-    display: flex
+    display: flex;
+    padding: 2rem;
+    box-shadow: 0 6px 16px #a0a7c31a;
 }
 
 ._24px-bold {
