@@ -1300,6 +1300,20 @@ textarea.w-select {
     outline: 0
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    background: transparent;
+}
+.dropdown-item{
+
+    color: #fff !important;
+    backdrop-filter: blur(20px);
+}
+
+.dropdown-item:hover{
+    color: #000 !important;
+}
+
+
 @media screen and (max-width:767px) {
     .w-nav-brand {
         padding-left: 10px
@@ -6164,7 +6178,7 @@ blockquote {
 }
 
 .nav-link {
-    color: white;
+    color: white !important;
     text-transform: capitalize;
     cursor: pointer;
     font-family: Inter Tight, sans-serif;
@@ -6347,7 +6361,7 @@ blockquote {
     text-align: left;
     cursor: pointer;
     width: 56px;
-    scale: 4;
+    scale: 3;
 }
 
 .hero-background {
@@ -15968,7 +15982,7 @@ blockquote {
     flex-direction: column;
     padding: 20px 40px;
     color: var(--white); /* Set text color to white for readability */
-    background: #000000; /* Set background to #1c6bad */
+    /* background: #000000; */ /* Set background to #1c6bad */
     white-space: normal;
     /* border-radius: 10px; */
     align-items: center;
@@ -16319,14 +16333,18 @@ blockquote {
     background-color: rgba(180, 190, 203, 0.4);
   }
 
-#bootstrap.navbar{z-index: 999;/* padding-top: 32px; *//* padding-left: 20px; *//* padding-right: 20px; */position: sticky;top: 2px;margin-top: 2rem;inset: 0% 0% auto;max-width: 1360px;left: 18rem;}
+#bootstrap.navbar{z-index: 999;/* padding-top: 32px; *//* padding-left: 20px; *//* padding-right: 20px; */position: sticky;top: 2px;margin-top: 2rem;inset: 0% 0% auto;max-width: 1360px;left: 18rem;backdrop-filter: blur(20px);}
+
+
+
 
 @media screen and (max-width:991px) {
 
     .values-grid{
         grid-template-columns: 1fr;
     }
-    #nav-img{
+
+    #nav-launch{
         display: none;
     }
     .navbar{
