@@ -15929,7 +15929,7 @@ blockquote {
     position: relative;
     white-space: nowrap;
     max-width: 1400px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
     margin: 0 auto;
     margin-bottom: 1rem;
     display: grid;
@@ -16130,6 +16130,16 @@ blockquote {
         display: block;
         margin: 1rem 0;
     }
+
+    .tokens-grid,
+    .grid-2col {
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr
+    }
+    .partners-grid {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+    
   }
   
   @media only screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) {
