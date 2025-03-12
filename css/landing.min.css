@@ -16345,7 +16345,12 @@ blockquote {
 
 #bootstrap.navbar{z-index: 999;/* padding-top: 32px; *//* padding-left: 20px; *//* padding-right: 20px; */position: sticky;top: 2px;margin-top: 2rem;inset: 0% 0% auto;max-width: 1360px;left: 18rem;backdrop-filter: blur(20px);}
 
-
+ .potrait-img{
+        display: none;
+    }
+    .landscape-img{
+        display: block;
+    }
 
 
 @media screen and (max-width:991px) {
@@ -16366,7 +16371,12 @@ blockquote {
     #roadmap .responsive-timeline{
         display: block;
     }
-
+    .potrait-img{
+        display: block;
+    }
+    .landscape-img{
+        display: none;
+    }
     .w-container {
         max-width: 728px
     }
