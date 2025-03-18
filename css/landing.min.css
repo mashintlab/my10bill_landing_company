@@ -7130,7 +7130,7 @@ blockquote {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
-    margin-top: 56px;
+    /* margin-top: 56px; */
     /* display: grid */
 }
 
@@ -7205,7 +7205,7 @@ blockquote {
     /* background: linear-gradient(to right, #d95dfb 0%, #1c6aab 100%); */
     border-radius: 16px;
     flex-flow: column;
-    padding: 32px;
+    /* padding: 32px; */
     display: flex
 }
 
@@ -13243,7 +13243,7 @@ blockquote {
     .tokens-grid {
         grid-column-gap: 32px;
         grid-row-gap: 32px;
-        margin-top: 36px
+        /* margin-top: 36px; */
     }
 
     .token-holder-green {
@@ -13261,7 +13261,7 @@ blockquote {
     }
 
     .token-holder-blue {
-        padding: 24px
+        /* padding: 24px; */
     }
 
     .swiper,
@@ -15458,7 +15458,7 @@ blockquote {
     }
 
     .token-holder-blue {
-        padding: 16px
+        /* padding: 16px; */
     }
 
     .gray-txt-18px {
