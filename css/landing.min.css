@@ -293,6 +293,7 @@ html.w-mod-touch * {
 
 ul > li > div > time > b{
  line-height: 3rem;
+ font-size: x-large;
 }
 
 .w-block {
