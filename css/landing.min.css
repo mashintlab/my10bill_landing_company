@@ -293,7 +293,7 @@ html.w-mod-touch * {
 
 ul > li > div > time > b{
  line-height: 3rem;
- font-size: x-large;
+ font-size: 1.0rem;
 }
 
 .w-block {
@@ -2092,7 +2092,7 @@ h1 {
     margin-bottom: 10px;
     font-size: 38px;
     font-weight: 700;
-    line-height: 44px
+    line-height: 44px;
 }
 
 h2 {
@@ -2103,6 +2103,9 @@ h2 {
     line-height: 2rem;
 }
 
+#roadmap h2{
+    font-size: calc(2.325rem + .9vw);
+}
 h3 {
     /* margin-top: 20px; */
     margin-bottom: 10px;
@@ -15451,7 +15454,7 @@ blockquote {
     }
 
     .value-icon {
-        display: none
+        /* display: none; */
     }
 
     .img-token {
