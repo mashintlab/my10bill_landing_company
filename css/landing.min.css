@@ -291,6 +291,26 @@ html.w-mod-touch * {
     
 }
 
+.roadmap-card{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 6px 16px #a0a7c31a;
+    color: white;
+}
+
+.top .roadmap-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bottom .roadmap-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
 ul > li > div > time > b{
  line-height: 3rem;
  font-size: 1.0rem;
@@ -2145,6 +2165,22 @@ img {
     max-width: 100%;
     display: inline-block;
     border-radius: 2rem;
+}
+
+.roadmap-card img{
+    height: 5rem;
+    width: 5rem;
+    background: #1f79b5;
+    border-radius: 50%;
+    padding: 0.9rem;
+}
+
+.roadmap-img{
+    height: 5rem;
+    width: 5rem;
+    background: #1f79b5;
+    border-radius: 50%;
+    padding: 0.9rem;
 }
 
 strong {
@@ -6109,7 +6145,12 @@ blockquote {
     margin: 7rem 0rem;
     display: flex
 }
-
+#roadmap-new{
+    background-image: url(../assets/icons/roadmap/road2.png);
+    background-repeat: no-repeat;
+    background-position: 0% 61%;
+    margin: 0 20px;
+}
 .section-new.hero {
     background-color: var(--white);
     justify-content: center;
@@ -15932,16 +15973,17 @@ blockquote {
 .roadmap .timeline {
     position: relative;
     white-space: nowrap;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     /* padding: 0 10px; */
-    margin: 0 auto;
+    /* margin: 0 0rem; */
+    /* margin-right: 15rem; */
     margin-bottom: 1rem;
     display: grid;
-    grid-template-columns: 320px auto;
-    grid-gap: 20px;
-    box-shadow: 0 6px 16px #a0a7c31a;
+    /* grid-template-columns: 320px auto; */
+    /* grid-gap: 20px; */
+    /* box-shadow: 0 6px 16px #a0a7c31a; */
     padding: 2rem;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
 }
 
 .roadmap .responsive-timeline{
@@ -16025,29 +16067,31 @@ blockquote {
 
 .roadmap .timeline ol {
     font-size: 0;
-    padding: 18rem 0;
+    /* width: max-content; */
+    padding: 25rem 0;
     transition: all 1s;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scrollbar-color: var(--black) var(--white);
+    /* overflow-x: scroll; */
+    /* scroll-snap-type: x mandatory; */
+    /* scrollbar-color: var(--black) var(--white); */
+    margin-right: 16rem;
 }
 
 .roadmap .timeline ol li {
     position: relative;
     display: inline-block;
     list-style-type: none;
-    width: 160px;
+    width: 7rem;
     height: 5px;
     background: var(--white); /* Set timeline color to white */
     scroll-snap-align: start;
 }
 
 .roadmap .timeline ol li:last-child {
-    width: 340px;
+    /* width: 340px; */
 }
 
 .roadmap .timeline ol li:not(:first-child) {
-    margin-left: 14px;
+    /* margin-left: 14px; */
 }
 
 .roadmap .timeline ol li:not(:last-child)::after {
@@ -16067,12 +16111,13 @@ blockquote {
 .roadmap .timeline ol li div {
     position: absolute;
     left: calc(100% + 7px);
-    width: 280px;
+    width: 200px;
     padding: 15px;
-    font-size: 1rem;
+    font-size: 1.0rem;
     white-space: normal;
     color: white;
     background: #000000;
+    box-shadow: 0 6px 16px #a0a7c31a;
     border-radius: 0 10px 10px 10px;
 }
 
@@ -16091,6 +16136,19 @@ blockquote {
     transform: translateY(-100%);
     border-radius: 10px 10px 10px 0;
 }
+
+.roadmap-div-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roadmap-div-bottom{
+     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
 
 .roadmap .timeline ol li:nth-child(odd) div::before {
     top: 100%;
@@ -16128,10 +16186,10 @@ blockquote {
         grid-template-columns: 1fr;
     }
     #roadmap .timeline{
-        display: none;
+        /* display: none; */
     }
     #roadmap .responsive-timeline{
-        display: block;
+        display: none;
         margin: 1rem 0;
     }
 
@@ -16157,10 +16215,10 @@ blockquote {
     }
   
     #roadmap .timeline{
-        display: none;
+        /* display: none; */
     }
     #roadmap .responsive-timeline{
-        display: block;
+        /* display: block; */
     }
   }
 
