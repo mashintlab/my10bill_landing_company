@@ -2162,7 +2162,8 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    /* max-width: 92%; */
+    align-self: center;
     display: inline-block;
     border-radius: 2rem;
 }
@@ -7057,10 +7058,10 @@ blockquote {
 }
 
 #investor .feature-img {
-    width: 100%; 
-    max-width: 400px; 
-    aspect-ratio: 1 / 1; 
-    object-fit: cover; 
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-top-right-radius: 3rem;
 }
 
@@ -7399,17 +7400,16 @@ blockquote {
 
 .investment-img {
     width: 100%;
-    max-width: 780px;
+    max-width: 650px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
 .solution-img{
      width: 100%;
-    max-width: 780px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    
+     max-width: 650px;
+     aspect-ratio: 1 / 1;
+     object-fit: cover;
 }
 
 .swiper-pagination {
