@@ -16287,6 +16287,25 @@ blockquote {
     filter: brightness(50%);
 } */
 
+.hero {
+    position: relative;
+    background-image: url('../assets/images/herobg.webp');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: brightness(0.5);
+    z-index: -1; /* Ensures the overlay is below content */
+  }
+
 .gradient-background {
     background: linear-gradient(300deg,darkviolet,#020204,#020204,#19abe5);
     background-size: 240% 240%;
@@ -16405,7 +16424,7 @@ blockquote {
     background-color: rgba(180, 190, 203, 0.4);
   }
 
-#bootstrap.navbar{z-index: 999;/* padding-top: 32px; *//* padding-left: 20px; *//* padding-right: 20px; */position: sticky;top: 2px;margin-top: 2rem;inset: 0% 0% auto;max-width: 1360px;left: 18rem;backdrop-filter: blur(20px);}
+#bootstrap.navbar{z-index: 999;/* padding-top: 32px; *//* padding-left: 20px; *//* padding-right: 20px; */position: fixed;top: 2px;/* margin-top: 2rem; */margin: 2rem auto;inset: 0% 0% auto;max-width: 1360px;/* left: 18rem; */backdrop-filter: blur(20px);}
 
  .potrait-img{
         display: none;
