@@ -16307,9 +16307,9 @@ blockquote {
   }
 
 .gradient-background {
-    background: linear-gradient(300deg,darkviolet,#020204,#020204,#19abe5);
-    background-size: 240% 240%;
-    animation: gradient-animation 6s ease infinite;
+    /* background: linear-gradient(300deg,darkviolet,#020204,#020204,#19abe5); */
+    /* background-size: 240% 240%; */
+    /* animation: gradient-animation 6s ease infinite; */
   }
   
   @keyframes gradient-animation {
@@ -16325,9 +16325,9 @@ blockquote {
   }
 
   .gradient-background2 {
-    background: linear-gradient(300deg, darkviolet, #020204, #020204, #19abe5);
-    background-size: 240% 240%;
-    animation: gradient-animation-reverse 6s ease infinite;
+    /* background: linear-gradient(300deg, darkviolet, #020204, #020204, #19abe5); */
+    /* background-size: 240% 240%; */
+    /* animation: gradient-animation-reverse 6s ease infinite; */
 }
 
 @keyframes gradient-animation-reverse {
