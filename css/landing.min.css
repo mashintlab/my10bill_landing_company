@@ -16446,6 +16446,9 @@ blockquote {
     .navbar{
         border-radius: 0 !important;
     }
+    #bootstrap.navbar{
+        margin: 0rem auto;
+    }
     #roadmap .timeline{
         display: none;
     }
