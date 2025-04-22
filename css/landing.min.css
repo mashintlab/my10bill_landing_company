@@ -3743,6 +3743,17 @@ blockquote {
     display: flex
 }
 
+.event-card {
+    border: none;
+  }
+  .timeline-dot {
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid #1f2937; /* match card bg */
+    border-radius: 50%;
+    z-index: 2;
+  }
+
 .collection-item {
     flex-wrap: wrap;
     align-content: stretch;
@@ -16116,7 +16127,7 @@ blockquote {
     font-size: 1.0rem;
     white-space: normal;
     color: white;
-    background: #000000;
+    background: #202938;
     box-shadow: 0 6px 16px #a0a7c31a;
     border-radius: 0 10px 10px 10px;
 }
@@ -16667,4 +16678,6 @@ blockquote {
         width: 100%
     }
 }
+
+
 
